@@ -95,7 +95,7 @@ void ReadFile(char *name)
 		}
 		
         if ((i+4 <= fileLen) && test_for_icon_string(buffer,i) == 1) {
-            sprintf(ico_counter_string,"%d",ico_counter);
+            sprintf(ico_counter_string,"%04d",ico_counter);
             strcpy(new_ico_name,fileName);
             strcat(new_ico_name,ico_counter_string);
             strcat(new_ico_name,".ico");
